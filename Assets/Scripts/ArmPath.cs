@@ -12,8 +12,11 @@ public class ArmPath : MonoBehaviour
     public float Speed = 1;
     public float step = 0;
 
-    public float inputCooldown = 0.1f;
+    public float inputCooldown = 0.01f;
     public float cooldown;
+
+    public float transitionSpeed = 5;
+    public Vector3 TargetPos;
 
     // Start is called before the first frame update
     void Start()
@@ -27,27 +30,27 @@ public class ArmPath : MonoBehaviour
         if(cooldown > 0)
         {
             cooldown -= Time.deltaTime;
-            return;
+        }
+        else
+        {
+            if (Input.GetKey(KeyCode.A))
+            {
+                step = Mathf.Clamp(step - Speed * Time.deltaTime, 0, 1);
+                cooldown = inputCooldown;
+            }
+            else if (Input.GetKey(KeyCode.D))
+            {
+                step = Mathf.Clamp(step + Speed * Time.deltaTime, 0, 1);
+                cooldown = inputCooldown;
+            }
         }
 
-        if(Input.GetKey(KeyCode.A))
-        {
-            step = Mathf.Clamp(step - Speed * Time.deltaTime, 0, 1);
-            SetPosition(step);
-            cooldown = inputCooldown;
-        }
-        else if(Input.GetKey(KeyCode.D))
-        {
-            step = Mathf.Clamp(step + Speed * Time.deltaTime, 0, 1);
-
-            SetPosition(step);
-            cooldown = inputCooldown;
-        }
+        SetPosition(step);
+        ArmGameObject.transform.position = Vector3.Lerp(ArmGameObject.transform.position, TargetPos, Time.deltaTime * transitionSpeed);
     }
 
     void SetPosition(float step)
     {
-        var position = Vector3.Lerp(StartAnchor.transform.position, EndAnchor.transform.position, step);
-        ArmGameObject.transform.position = position;
+        TargetPos = Vector3.Lerp(StartAnchor.transform.position, EndAnchor.transform.position, step);
     }
 }
