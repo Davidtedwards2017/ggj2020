@@ -5,10 +5,12 @@ using DG.Tweening;
 public class ArmPath : MonoBehaviour
 {
 
+    public GameObject StartAnchor;
+    public GameObject EndAnchor;
+    
     public GameObject ArmGameObject;
-    public DOTweenPath Path;
-    public int Current = 0;
-    private int length;
+    public float Speed = 1;
+    public float step = 0;
 
     public float inputCooldown = 0.1f;
     public float cooldown;
@@ -16,8 +18,7 @@ public class ArmPath : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Path = GetComponent<DOTweenPath>();
-        length = Path.wps.Count - 1;
+        SetPosition(step);
     }
 
     // Update is called once per frame
@@ -31,23 +32,22 @@ public class ArmPath : MonoBehaviour
 
         if(Input.GetKey(KeyCode.A))
         {
-            Current = Mathf.Clamp(Current + 1, 0, length);
-            SetPosition(Current);
+            step = Mathf.Clamp(step - Speed * Time.deltaTime, 0, 1);
+            SetPosition(step);
             cooldown = inputCooldown;
         }
         else if(Input.GetKey(KeyCode.D))
         {
-            Current = Mathf.Clamp(Current - 1, 0, length);
-            SetPosition(Current);
+            step = Mathf.Clamp(step + Speed * Time.deltaTime, 0, 1);
+
+            SetPosition(step);
             cooldown = inputCooldown;
         }
     }
 
-    void SetPosition(int index)
+    void SetPosition(float step)
     {
-        if(ArmGameObject != null)
-        {
-            ArmGameObject.transform.position = Path.wps[index];
-        }
+        var position = Vector3.Lerp(StartAnchor.transform.position, EndAnchor.transform.position, step);
+        ArmGameObject.transform.position = position;
     }
 }
