@@ -22,5 +22,24 @@ public class ParticleExplosion : MonoBehaviour
         Vector3 force = transform.forward;
         force = new Vector3(force.x, 3, force.z);
         rigidBody.AddForce(force * speed);
+
+        if (this.gameObject.tag == "Cloud")
+        {
+            StartCoroutine(FadeTo(0f, 1.0f));
+            Debug.Log("Happening!");
+        }
     }
+
+    IEnumerator FadeTo(float aValue, float aTime)
+    {
+        float alpha = this.gameObject.GetComponent<SpriteRenderer>().color.a;
+        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+        {
+            Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha, aValue, t));
+            this.gameObject.GetComponent<SpriteRenderer>().color = newColor;
+            yield return null;
+        }
+    }
+
+
 }
