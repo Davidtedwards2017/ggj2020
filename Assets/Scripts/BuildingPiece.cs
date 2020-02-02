@@ -40,8 +40,8 @@ public class BuildingPiece : MonoBehaviour
 
         if (col.otherCollider.tag == "Building" && col.relativeVelocity.magnitude >= 8.5f)
         {
-            sfxSource.PlayOneShot(crashClips[Random.Range(0, 2)]);
-            Debug.Log(col.relativeVelocity.magnitude);
+            sfxSource.PlayOneShot(crashClips[Random.Range(0, 8)]);
+            //Debug.Log(col.relativeVelocity.magnitude);
         }
     }
 

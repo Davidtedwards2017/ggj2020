@@ -14570,6 +14570,66 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2773297487078985881}
     m_Modifications:
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: crashClips.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 2773297486707870942}
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: breakSource
+      value: 
+      objectReference: {fileID: 6250980698915685264}
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: crashClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1738e8f730d11004890b7ee80f000115, type: 3}
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: crashClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 84095fe6fe695f64eb2c6f5105377552, type: 3}
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: crashClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 00a3d295b83b7684f849ff7f13daee9a, type: 3}
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: crashClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a417df602bfec54d9537310d7e33a20, type: 3}
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: crashClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e76f370bf0d3d84db873b097cedcd39, type: 3}
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: crashClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 70ece114a7097334d8f555d96f4512d4, type: 3}
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: crashClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1556487956dcd0c46974b616070b08eb, type: 3}
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: crashClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: b894e461a5784584ca146e8380c93fb0, type: 3}
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: crashClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 18a675b84a2d7fe439ef8c9c93d64fbf, type: 3}
     - target: {fileID: 8272549674694800007, guid: d1f8fa51105482c4685c5c06df368d19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14672,6 +14732,66 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2773297487078985881}
     m_Modifications:
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: crashClips.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 2773297486707870942}
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: breakSource
+      value: 
+      objectReference: {fileID: 6250980698915685264}
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: crashClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1738e8f730d11004890b7ee80f000115, type: 3}
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: crashClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 84095fe6fe695f64eb2c6f5105377552, type: 3}
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: crashClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 00a3d295b83b7684f849ff7f13daee9a, type: 3}
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: crashClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a417df602bfec54d9537310d7e33a20, type: 3}
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: crashClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e76f370bf0d3d84db873b097cedcd39, type: 3}
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: crashClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 70ece114a7097334d8f555d96f4512d4, type: 3}
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: crashClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1556487956dcd0c46974b616070b08eb, type: 3}
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: crashClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: b894e461a5784584ca146e8380c93fb0, type: 3}
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: crashClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 18a675b84a2d7fe439ef8c9c93d64fbf, type: 3}
     - target: {fileID: 6894159174987120173, guid: 193340d80c90b2e469d5f289d1e4b07c,
         type: 3}
       propertyPath: m_GravityScale
@@ -14774,6 +14894,66 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2773297487078985881}
     m_Modifications:
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: crashClips.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 2773297486707870942}
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: breakSource
+      value: 
+      objectReference: {fileID: 6250980698915685264}
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: crashClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1738e8f730d11004890b7ee80f000115, type: 3}
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: crashClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 84095fe6fe695f64eb2c6f5105377552, type: 3}
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: crashClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 00a3d295b83b7684f849ff7f13daee9a, type: 3}
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: crashClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a417df602bfec54d9537310d7e33a20, type: 3}
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: crashClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e76f370bf0d3d84db873b097cedcd39, type: 3}
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: crashClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 70ece114a7097334d8f555d96f4512d4, type: 3}
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: crashClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1556487956dcd0c46974b616070b08eb, type: 3}
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: crashClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: b894e461a5784584ca146e8380c93fb0, type: 3}
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: crashClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 18a675b84a2d7fe439ef8c9c93d64fbf, type: 3}
     - target: {fileID: 8569172100133163213, guid: 805cd0ea7bb2021498945d023422864d,
         type: 3}
       propertyPath: m_Name
@@ -14876,6 +15056,66 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2773297487078985881}
     m_Modifications:
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: crashClips.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 2773297486707870942}
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: breakSource
+      value: 
+      objectReference: {fileID: 6250980698915685264}
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: crashClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1738e8f730d11004890b7ee80f000115, type: 3}
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: crashClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 84095fe6fe695f64eb2c6f5105377552, type: 3}
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: crashClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 00a3d295b83b7684f849ff7f13daee9a, type: 3}
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: crashClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a417df602bfec54d9537310d7e33a20, type: 3}
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: crashClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e76f370bf0d3d84db873b097cedcd39, type: 3}
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: crashClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 70ece114a7097334d8f555d96f4512d4, type: 3}
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: crashClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1556487956dcd0c46974b616070b08eb, type: 3}
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: crashClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: b894e461a5784584ca146e8380c93fb0, type: 3}
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: crashClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 18a675b84a2d7fe439ef8c9c93d64fbf, type: 3}
     - target: {fileID: 4224194528663399692, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
         type: 3}
       propertyPath: m_GravityScale
@@ -15053,6 +15293,66 @@ PrefabInstance:
       propertyPath: m_Name
       value: B_Small_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: crashClips.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 2773297486707870942}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: breakSource
+      value: 
+      objectReference: {fileID: 6250980698915685264}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: crashClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1738e8f730d11004890b7ee80f000115, type: 3}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: crashClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 84095fe6fe695f64eb2c6f5105377552, type: 3}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: crashClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 00a3d295b83b7684f849ff7f13daee9a, type: 3}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: crashClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a417df602bfec54d9537310d7e33a20, type: 3}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: crashClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e76f370bf0d3d84db873b097cedcd39, type: 3}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: crashClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 70ece114a7097334d8f555d96f4512d4, type: 3}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: crashClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1556487956dcd0c46974b616070b08eb, type: 3}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: crashClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: b894e461a5784584ca146e8380c93fb0, type: 3}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: crashClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 18a675b84a2d7fe439ef8c9c93d64fbf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 924b44abc98ec694ab4451e514343d4f, type: 3}
 --- !u!4 &2757933025573861151 stripped
@@ -15160,8 +15460,80 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 85.33486
       objectReference: {fileID: 0}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: crashClips.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 2773297486707870942}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: breakSource
+      value: 
+      objectReference: {fileID: 6250980698915685264}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: crashClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1738e8f730d11004890b7ee80f000115, type: 3}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: crashClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 84095fe6fe695f64eb2c6f5105377552, type: 3}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: crashClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 00a3d295b83b7684f849ff7f13daee9a, type: 3}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: crashClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a417df602bfec54d9537310d7e33a20, type: 3}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: crashClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e76f370bf0d3d84db873b097cedcd39, type: 3}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: crashClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 70ece114a7097334d8f555d96f4512d4, type: 3}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: crashClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1556487956dcd0c46974b616070b08eb, type: 3}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: crashClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: b894e461a5784584ca146e8380c93fb0, type: 3}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: crashClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 18a675b84a2d7fe439ef8c9c93d64fbf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cfc6f2bd50fa2347a51a32a42709e34, type: 3}
+--- !u!82 &6250980698915685264 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8125420123946838121, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+    type: 3}
+  m_PrefabInstance: {fileID: 2773297487016373241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2773297486707870942 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 766306087, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+    type: 3}
+  m_PrefabInstance: {fileID: 2773297487016373241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7405968494604832239 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
@@ -28359,12 +28731,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2246ce4479788843b34f51195c0573f, type: 3}
---- !u!224 &2773297485675690371 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6417281887797002414, guid: c2246ce4479788843b34f51195c0573f,
-    type: 3}
-  m_PrefabInstance: {fileID: 9183535351151376685}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2773297485358778059 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6417281887447154662, guid: c2246ce4479788843b34f51195c0573f,
@@ -28380,6 +28746,12 @@ MonoBehaviour:
 --- !u!224 &2773297485358778058 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6417281887447154663, guid: c2246ce4479788843b34f51195c0573f,
+    type: 3}
+  m_PrefabInstance: {fileID: 9183535351151376685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &2773297485675690371 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6417281887797002414, guid: c2246ce4479788843b34f51195c0573f,
     type: 3}
   m_PrefabInstance: {fileID: 9183535351151376685}
   m_PrefabAsset: {fileID: 0}
