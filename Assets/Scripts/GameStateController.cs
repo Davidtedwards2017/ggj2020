@@ -19,6 +19,9 @@ public class GameStateController : Singleton<GameStateController>
     public SplashScreenModule EndSplashScreen;
 
     public StageController StageController;
+    public AudioSource mySource;
+    [SerializeField] AudioClip birdClip;
+    [SerializeField] AudioClip trackClip;
 
     public bool CanControl = false;
 
@@ -27,6 +30,8 @@ public class GameStateController : Singleton<GameStateController>
     // Start is called before the first frame update
     void Start()
     {
+
+        mySource = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
         statectrl = StateMachine<GameStates>.Initialize(this);
         statectrl.ChangeState(GameStates.init);
     }
@@ -60,6 +65,9 @@ public class GameStateController : Singleton<GameStateController>
     {
         StageController.stageInstance.Init();
         CanControl = true;
+        mySource.Stop();
+        mySource.clip = trackClip;
+        mySource.Play();
     }
 
     public void playing_Exit()

@@ -15,6 +15,7 @@ public class BuildingPiece : MonoBehaviour
     [SerializeField] AudioClip[] crashClips;
     [SerializeField] AudioSource sfxSource;
     [SerializeField] AudioSource breakSource;
+    private float randomChance = 0;
 
 
     // Start is called before the first frame update
@@ -39,8 +40,21 @@ public class BuildingPiece : MonoBehaviour
 
         if (col.otherCollider.tag == "Building" && col.relativeVelocity.magnitude >= 8.5f)
         {
-            sfxSource.PlayOneShot(crashClips[Random.Range(0, 2)]);
-            Debug.Log(col.relativeVelocity.magnitude);
+            sfxSource.PlayOneShot(crashClips[Random.Range(0, 8)]);
+            //Debug.Log(col.relativeVelocity.magnitude);
+        }
+
+        else if (col.gameObject.tag == "Ground" && col.relativeVelocity.magnitude >= 4.0f)
+        {
+            //Debug.Log("Hit gronud!");
+            randomChance += Random.Range(0, 75);
+            if (randomChance >= 15)
+            {
+                Instantiate(SmallExplode, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+                randomChance = 0;
+            }
+            else 
+                randomChance = 0;
         }
     }
 
