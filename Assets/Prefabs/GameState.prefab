@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3604627717250793172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 8.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8752292334879380426}
@@ -76,6 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartSplashScreen: {fileID: 0}
+  EndSplashScreen: {fileID: 0}
   StageController: {fileID: 9157626835161512722}
   CanControl: 0
 --- !u!114 &9157626835161512722
@@ -90,10 +91,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2608695666727444a14523fe2d7b19f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Angle: 90
+  Angle: 50
   TorqueOffset: 5000
   Power: 500000
   PowerOffset: 10000
   StagePrefab: {fileID: 2773297487078985886, guid: b92c6c98ff2695c4c9e6c82aae044cab,
     type: 3}
   SpawnPoint: {fileID: 5194910756547853494}
+  stageInstance: {fileID: 0}

@@ -12,9 +12,12 @@ public class GameStateController : Singleton<GameStateController>
         intro,
         playing,
         finished,
+        cleanup,
     }
 
     public SplashScreenModule StartSplashScreen;
+    public SplashScreenModule EndSplashScreen;
+
     public StageController StageController;
 
     public bool CanControl = false;
@@ -55,6 +58,7 @@ public class GameStateController : Singleton<GameStateController>
 
     public void playing_Enter()
     {
+        StageController.stageInstance.Init();
         CanControl = true;
     }
 
@@ -63,8 +67,27 @@ public class GameStateController : Singleton<GameStateController>
         CanControl = false;
     }
     
-    public void finished_Enter()
+    public void Win()
     {
+        statectrl.ChangeState(GameStates.finished);
+    }
 
+    public IEnumerator finished_Enter()
+    {
+        EndSplashScreen.Active = true;
+        yield return new WaitForSeconds(5.0f);
+        statectrl.ChangeState(GameStates.cleanup);
+    }
+
+    public void finished_Exit()
+    {
+        EndSplashScreen.Active = false;
+    }
+
+    public void cleanup_Enter()
+    {
+        Application.LoadLevel(Application.loadedLevel);
+
+        statectrl.ChangeState(GameStates.title);
     }
 }

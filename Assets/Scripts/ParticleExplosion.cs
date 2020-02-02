@@ -26,7 +26,6 @@ public class ParticleExplosion : MonoBehaviour
         if (this.gameObject.tag == "Cloud")
         {
             StartCoroutine(FadeTo(0f, 1.0f));
-            Debug.Log("Happening!");
         }
     }
 

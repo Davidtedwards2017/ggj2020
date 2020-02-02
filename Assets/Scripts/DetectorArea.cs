@@ -9,9 +9,18 @@ public class DetectorArea : MonoBehaviour
     public int Filled;
     public float Percent;
 
+    public GameObject FilledOutline;
+    public GameObject UnFilledOutline;
+
     private DetectionBubble[] Detectors
     {
         get { return GetComponentsInChildren<DetectionBubble>(); }
+    }
+
+    public void SetFilledOutline(bool filled)
+    {
+        FilledOutline.SetActive(filled);
+        UnFilledOutline.SetActive(!filled);
     }
 
     // Update is called once per frame

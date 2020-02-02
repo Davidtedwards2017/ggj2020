@@ -7,7 +7,7 @@ public class SplashScreenModule : Module
 {
     public Animator animator;
 
-    private void Start()
+    protected void Start()
     {
         animator = GetComponent<Animator>();
     }

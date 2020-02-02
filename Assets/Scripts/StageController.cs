@@ -14,7 +14,7 @@ public class StageController : Singleton<StageController>
     public Transform SpawnPoint;
 
 
-    private Stage stageInstance;
+    public Stage stageInstance;
     // Start is called before the first frame update
     public void SpawnStage()
     {
@@ -24,7 +24,6 @@ public class StageController : Singleton<StageController>
 
     public IEnumerator BreakingSequence()
     {
-
         yield return new WaitForSeconds(1);
 
         stageInstance.Scatter(Angle, Power - PowerOffset, Power + PowerOffset, -TorqueOffset, TorqueOffset);
@@ -34,14 +33,7 @@ public class StageController : Singleton<StageController>
         yield return new WaitForSeconds(1);
 
         stageInstance.Scatter(Angle, Power - PowerOffset, Power + PowerOffset, -TorqueOffset, TorqueOffset);
-
-
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

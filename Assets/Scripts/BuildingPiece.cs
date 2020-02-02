@@ -30,7 +30,6 @@ public class BuildingPiece : MonoBehaviour
         //Debug.Log(col.relativeVelocity.magnitude);
         var current = Damages[Level];
         current.DamageTillNextLevel -= col.relativeVelocity.magnitude;
-        //Instantiate(MedExplode, this.gameObject.transform.position, Quaternion.identity);
 
         if (Level < Damages.Length - 1 && current.DamageTillNextLevel <= 0)
         {

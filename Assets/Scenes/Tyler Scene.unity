@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -653,8 +653,45 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3401209674793443759, guid: a802edf4f3e6a154e92040cf4f9b94bb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a802edf4f3e6a154e92040cf4f9b94bb, type: 3}
+--- !u!114 &3336867779920870536 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7084845113323106585, guid: a802edf4f3e6a154e92040cf4f9b94bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3336867779920870535}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &3336867779920870537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 785362816444250003, guid: a802edf4f3e6a154e92040cf4f9b94bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3336867779920870535}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3336867779920870538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3336867779920870537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d8b7fe2c36381419ad1fb3686ebd7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  sprites:
+  - {fileID: 21300000, guid: 2a68b97d8aa66304abf2387e562300ce, type: 3}
+  - {fileID: 21300000, guid: 90afe1ce61657f7448026404df5e46ce, type: 3}
+  - {fileID: 21300000, guid: 712ceb6cf7c59464f962411888c70a92, type: 3}
+  Image: {fileID: 3336867779920870536}
 --- !u!1001 &3951739985964352862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -805,6 +842,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5194910756547853494, guid: 77ea09b5a6589634fa333de21e71c80a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8752292334879380420, guid: 77ea09b5a6589634fa333de21e71c80a,
         type: 3}
       propertyPath: m_Name
@@ -870,6 +912,11 @@ PrefabInstance:
       propertyPath: StartSplashScreen
       value: 
       objectReference: {fileID: 82018704}
+    - target: {fileID: 9157626835161512722, guid: 77ea09b5a6589634fa333de21e71c80a,
+        type: 3}
+      propertyPath: Angle
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77ea09b5a6589634fa333de21e71c80a, type: 3}
 --- !u!1001 &8788590461328159477
