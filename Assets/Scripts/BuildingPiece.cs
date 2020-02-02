@@ -12,7 +12,9 @@ public class BuildingPiece : MonoBehaviour
     [SerializeField] GameObject MedExplode;
     [SerializeField] GameObject SmallExplode;
     [SerializeField] AudioClip[] clips;
-    AudioSource audioSource;
+    [SerializeField] AudioClip[] crashClips;
+    [SerializeField] AudioSource sfxSource;
+    [SerializeField] AudioSource breakSource;
 
 
     // Start is called before the first frame update
@@ -20,7 +22,6 @@ public class BuildingPiece : MonoBehaviour
     {
         Rb = GetComponent<Rigidbody2D>();
         Render = GetComponent<SpriteRenderer>();
-        audioSource = GetComponent<AudioSource>();
         LoadDamage(Level);
     }
 
@@ -36,6 +37,12 @@ public class BuildingPiece : MonoBehaviour
             Level++;
             LoadDamage(Level);
         }
+
+        if (col.otherCollider.tag == "Building" && col.relativeVelocity.magnitude >= 8.5f)
+        {
+            sfxSource.PlayOneShot(crashClips[Random.Range(0, 2)]);
+            Debug.Log(col.relativeVelocity.magnitude);
+        }
     }
 
     public void LoadDamage(int level)
@@ -44,7 +51,7 @@ public class BuildingPiece : MonoBehaviour
         if (level >= 1)
         {
             Instantiate(BigExplode, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 15, gameObject.transform.position.z), Quaternion.identity);
-            audioSource.PlayOneShot(clips[Random.Range(0,2)]);
+            breakSource.PlayOneShot(clips[Random.Range(0, 2)]);
         }
     }
 
