@@ -575,11 +575,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6c266ce5f9b390b4d915e3f5b97a7353, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 79eacc0a6a32c9443aac196626675d8d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -588,7 +588,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -921,6 +921,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 3951739984271372408, guid: 91a15963b6477c847ab9318e4625d3ee,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91a15963b6477c847ab9318e4625d3ee, type: 3}
 --- !u!1001 &4102428573594931145
@@ -1074,6 +1079,21 @@ PrefabInstance:
       propertyPath: StartSplashScreen
       value: 
       objectReference: {fileID: 82018704}
+    - target: {fileID: 8752292334879380427, guid: 77ea09b5a6589634fa333de21e71c80a,
+        type: 3}
+      propertyPath: CanControl
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8752292334879380427, guid: 77ea09b5a6589634fa333de21e71c80a,
+        type: 3}
+      propertyPath: birdClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 79eacc0a6a32c9443aac196626675d8d, type: 3}
+    - target: {fileID: 8752292334879380427, guid: 77ea09b5a6589634fa333de21e71c80a,
+        type: 3}
+      propertyPath: trackClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7b99fedc574dbd2438f5e31936189af8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77ea09b5a6589634fa333de21e71c80a, type: 3}
 --- !u!1001 &8788590461328159477
