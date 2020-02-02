@@ -5,24 +5,38 @@ using UnityEngine;
 public class StageController : Singleton<StageController>
 {
 
-   public GameObject StagePrefab;
+    public float Angle = 90;
+    public float TorqueOffset = 5000;
+    public float Power = 500000;
+    public float PowerOffset = 10000;
 
-    public BuildingPiece[] BuildingPieces;
-    public DetectorArea DetectorArea;
-
+    public Stage StagePrefab;
     public Transform SpawnPoint;
 
-    
 
-    
+    private Stage stageInstance;
     // Start is called before the first frame update
-    void SpawnStage()
+    public void SpawnStage()
     {
-        var instance = Instantiate(StagePrefab);
-        instance.transform.position = SpawnPoint.position;
+        stageInstance = Instantiate(StagePrefab);
+        stageInstance.transform.position = SpawnPoint.position;
+    }
 
-        BuildingPieces = instance.GetComponentsInChildren<BuildingPiece>();
-        DetectorArea = instance.GetComponentInChildren<DetectorArea>();
+    public IEnumerator BreakingSequence()
+    {
+
+        yield return new WaitForSeconds(1);
+
+        stageInstance.Scatter(Angle, Power - PowerOffset, Power + PowerOffset, -TorqueOffset, TorqueOffset);
+        yield return new WaitForSeconds(1);
+
+        stageInstance.Scatter(Angle, Power - PowerOffset, Power + PowerOffset, -TorqueOffset, TorqueOffset);
+        yield return new WaitForSeconds(1);
+
+        stageInstance.Scatter(Angle, Power - PowerOffset, Power + PowerOffset, -TorqueOffset, TorqueOffset);
+
+
+
     }
 
     // Update is called once per frame

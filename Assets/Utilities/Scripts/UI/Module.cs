@@ -7,6 +7,8 @@ public class Module : MonoBehaviour {
 
     private bool _Active;
 
+    Sequence activeSequence;
+
     public bool Active
     {
         get { return _Active; }
@@ -29,26 +31,11 @@ public class Module : MonoBehaviour {
 
     protected virtual void OnActivated()
     {
-
     }
 
     protected virtual void OnDeactivated()
     {
     }
-
-    //public Sequence AnimateIn()
-    //{
-    //    Sequence sequence = DOTween.Sequence();
-    //    //sequence.Append(GetComponent<CanvasGroup>().DOFade(1f, .3f));
-    //    return sequence;
-    //}
-    //
-    //public Sequence AnimateOut()
-    //{
-    //    Sequence sequence = DOTween.Sequence();
-    //    //sequence.Append(GetComponent<CanvasGroup>().DOFade(0f, .3f));
-    //    return sequence;
-    //}
 
     public void SetPosition(Vector2 position)
     {

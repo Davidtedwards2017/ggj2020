@@ -14,6 +14,9 @@ public class GameStateController : Singleton<GameStateController>
         finished,
     }
 
+    public SplashScreenModule StartSplashScreen;
+    public StageController StageController;
+
     public bool CanControl = false;
 
     public StateMachine<GameStates> statectrl;
@@ -32,13 +35,21 @@ public class GameStateController : Singleton<GameStateController>
     
     public IEnumerator title_Enter()
     {
+        StartSplashScreen.Active = true;
         yield return new WaitUntil(() => Input.anyKeyDown);
         statectrl.ChangeState(GameStates.intro);
     }
 
+    public void title_Exit()
+    {
+        StartSplashScreen.Active = false;
+    }
+
     public IEnumerator intro_Enter()
     {
-        yield return new WaitForSeconds(1.0f);
+        StageController.SpawnStage();
+        yield return (StageController.BreakingSequence());
+        //yield return new WaitForSeconds(1.0f);
         statectrl.ChangeState(GameStates.playing);
     }
 
@@ -52,7 +63,6 @@ public class GameStateController : Singleton<GameStateController>
         CanControl = false;
     }
     
-
     public void finished_Enter()
     {
 

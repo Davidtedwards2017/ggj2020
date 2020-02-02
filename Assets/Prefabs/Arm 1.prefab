@@ -194,13 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433c212cbe33b88468444f7090281c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OpenAnchor: {fileID: 4996365828628683486}
-  ClosedAnchor: {fileID: 4996365828921529331}
-  ExtendRate: 2
-  TimeBeforeDecay: 0.1
-  DecayRate: 1
-  CurrentStep: 0
-  Hand: {fileID: 4996365828900992686}
+  Animator: {fileID: 0}
 --- !u!1 &4996365828271208153
 GameObject:
   m_ObjectHideFlags: 0
