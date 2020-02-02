@@ -78,6 +78,9 @@ MonoBehaviour:
   StartSplashScreen: {fileID: 0}
   EndSplashScreen: {fileID: 0}
   StageController: {fileID: 9157626835161512722}
+  mySource: {fileID: 0}
+  birdClip: {fileID: 8300000, guid: 79eacc0a6a32c9443aac196626675d8d, type: 3}
+  trackClip: {fileID: 8300000, guid: 7b99fedc574dbd2438f5e31936189af8, type: 3}
   CanControl: 0
 --- !u!114 &9157626835161512722
 MonoBehaviour:

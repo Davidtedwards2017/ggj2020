@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &1007533 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5988053741867154425, guid: a802edf4f3e6a154e92040cf4f9b94bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3336867779920870535}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9628d35c5952f2e4f92f484959f26cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &82018704 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3336867779847568663, guid: a802edf4f3e6a154e92040cf4f9b94bb,
@@ -1081,19 +1093,9 @@ PrefabInstance:
       objectReference: {fileID: 82018704}
     - target: {fileID: 8752292334879380427, guid: 77ea09b5a6589634fa333de21e71c80a,
         type: 3}
-      propertyPath: CanControl
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8752292334879380427, guid: 77ea09b5a6589634fa333de21e71c80a,
-        type: 3}
-      propertyPath: birdClip
+      propertyPath: EndSplashScreen
       value: 
-      objectReference: {fileID: 8300000, guid: 79eacc0a6a32c9443aac196626675d8d, type: 3}
-    - target: {fileID: 8752292334879380427, guid: 77ea09b5a6589634fa333de21e71c80a,
-        type: 3}
-      propertyPath: trackClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 7b99fedc574dbd2438f5e31936189af8, type: 3}
+      objectReference: {fileID: 1007533}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77ea09b5a6589634fa333de21e71c80a, type: 3}
 --- !u!1001 &8788590461328159477
