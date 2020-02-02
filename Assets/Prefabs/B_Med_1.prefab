@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8272549674694800007}
-  - component: {fileID: 8272549674694800006}
   - component: {fileID: 8272549674694800011}
   - component: {fileID: 8272549674694800010}
   - component: {fileID: 8272549674694800004}
+  - component: {fileID: 7820776537697005889}
   m_Layer: 0
   m_Name: B_Med_1
   m_TagString: Untagged
@@ -27,60 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8272549674694800009}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -27.2, y: 16.6, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1971053207 &8272549674694800006
-SpriteShapeRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8272549674694800009}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_MaskInteraction: 0
-  m_ShapeTexture: {fileID: 0}
-  m_Sprites: []
-  m_LocalAABB:
-    m_Center: {x: 1.2279661, y: 0.86368585, z: 0}
-    m_Extent: {x: 3.2279663, y: 2.863686, z: 0}
 --- !u!50 &8272549674694800011
 Rigidbody2D:
   serializedVersion: 4
@@ -93,7 +46,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 202.96161
+  m_Mass: 186.78653
   m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -177,58 +130,36 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 3.12, y: -0.565}
-      - {x: 3.11, y: -0.325}
-      - {x: 3.09, y: -0.325}
-      - {x: 3.09, y: 0.235}
-      - {x: 3.12, y: 0.345}
-      - {x: 3.12, y: 0.49499997}
-      - {x: 3.1, y: 0.60499996}
-      - {x: 3.04, y: 0.645}
-      - {x: 2.79, y: 0.635}
-      - {x: 2.29, y: 0.655}
-      - {x: 1.87, y: 0.645}
-      - {x: 1.86, y: 0.655}
-      - {x: 1.4599999, y: 0.66499996}
-      - {x: 0.53, y: 0.655}
-      - {x: -0.07, y: 1.345}
-      - {x: -0.22, y: 1.495}
-      - {x: -0.26, y: 1.515}
-      - {x: -0.69, y: 1.515}
-      - {x: -0.97999996, y: 1.505}
-      - {x: -1.1999999, y: 1.515}
-      - {x: -1.4499999, y: 1.495}
-      - {x: -1.4699999, y: 1.515}
-      - {x: -2.78, y: 1.515}
-      - {x: -2.98, y: 1.505}
-      - {x: -3.04, y: 1.485}
-      - {x: -3.08, y: 1.435}
-      - {x: -3.08, y: 1.225}
-      - {x: -3.04, y: 0.935}
-      - {x: -3.02, y: 0.48499998}
-      - {x: -2.97, y: 0.39499998}
-      - {x: -2.72, y: 0.155}
-      - {x: -2.04, y: 0.16499999}
-      - {x: -1.5999999, y: 0.155}
-      - {x: -1.49, y: 0.155}
-      - {x: -1.4, y: 0.024999999}
-      - {x: -0.83, y: -0.655}
-      - {x: -0.74, y: -0.73499995}
-      - {x: -0.77, y: -0.92499995}
-      - {x: -0.82, y: -0.98499995}
-      - {x: -0.83, y: -1.035}
-      - {x: -0.79999995, y: -1.0849999}
-      - {x: -0.75, y: -1.105}
-      - {x: -0.83, y: -1.3149999}
-      - {x: -0.82, y: -1.405}
-      - {x: -0.81, y: -1.505}
-      - {x: -0.79999995, y: -1.545}
-      - {x: 3.11, y: -1.545}
-      - {x: 3.12, y: -1.515}
-      - {x: 3.09, y: -1.0849999}
-      - {x: 3.12, y: -0.655}
-    - - {x: -0.78, y: -0.205}
-      - {x: -0.78, y: -0.185}
-      - {x: -0.95, y: 0.035}
-      - {x: -0.75, y: -0.255}
-      - {x: -0.74, y: -0.24499999}
+    - - {x: -0.7979126, y: -1.4891517}
+      - {x: -0.72551346, y: -0.63007784}
+      - {x: -1.5378036, y: 0.29232836}
+      - {x: -2.71875, y: 0.25916767}
+      - {x: -2.9176397, y: 0.54896706}
+      - {x: -2.9918327, y: 1.4578605}
+      - {x: -0.26955748, y: 1.5070462}
+      - {x: 0.4847083, y: 0.57653666}
+      - {x: 3.0319545, y: 0.55623007}
+      - {x: 3.0859022, y: -1.5265296}
+      - {x: -0.60918796, y: -1.490968}
+      - {x: -0.74842995, y: -1.489628}
+      - {x: -0.7979126, y: -1.4891517}
+--- !u!114 &7820776537697005889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8272549674694800009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9a9e05f16da05a4798b330c08fc5784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Level: 0
+  Damages:
+  - Sprite: {fileID: 21300000, guid: 251231d938b21994aaaf136ecf614023, type: 3}
+    Effects: []
+  - Sprite: {fileID: 21300000, guid: 771425ad440992e4ea20ed05b3c4e886, type: 3}
+    Effects: []
+  Render: {fileID: 0}
+  CollisionDamageThreshold: 2
