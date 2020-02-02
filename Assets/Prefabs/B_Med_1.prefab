@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7820776537697005889}
   m_Layer: 0
   m_Name: B_Med_1
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,12 +48,12 @@ Rigidbody2D:
   m_UseAutoMass: 1
   m_Mass: 186.78653
   m_LinearDrag: 5
-  m_AngularDrag: 0.05
-  m_GravityScale: 5
-  m_Material: {fileID: 0}
-  m_Interpolate: 1
+  m_AngularDrag: 1
+  m_GravityScale: 7
+  m_Material: {fileID: 6200000, guid: a7aedacbde402314999e52c1fe000bbc, type: 2}
+  m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &8272549674694800010
 SpriteRenderer:
@@ -157,9 +157,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 0
   Damages:
-  - Sprite: {fileID: 21300000, guid: 251231d938b21994aaaf136ecf614023, type: 3}
+  - DamageTillNextLevel: 1000
+    Sprite: {fileID: 21300000, guid: 251231d938b21994aaaf136ecf614023, type: 3}
     Effects: []
-  - Sprite: {fileID: 21300000, guid: 771425ad440992e4ea20ed05b3c4e886, type: 3}
+  - DamageTillNextLevel: 1000
+    Sprite: {fileID: 21300000, guid: 771425ad440992e4ea20ed05b3c4e886, type: 3}
     Effects: []
   Render: {fileID: 0}
-  CollisionDamageThreshold: 2

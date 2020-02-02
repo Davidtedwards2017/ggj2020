@@ -7,10 +7,12 @@ public class BuildingPiece : MonoBehaviour
     public int Level = 0;
     public DamageLevel[] Damages;
     public SpriteRenderer Render;
+    public Rigidbody2D Rb;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        Rb = GetComponent<Rigidbody2D>();
         Render = GetComponent<SpriteRenderer>();
         LoadDamage(Level);
     }

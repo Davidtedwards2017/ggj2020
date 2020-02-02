@@ -14,6 +14,8 @@ public class GameStateController : Singleton<GameStateController>
         finished,
     }
 
+    public bool CanControl = false;
+
     public StateMachine<GameStates> statectrl;
 
     // Start is called before the first frame update
@@ -22,32 +24,34 @@ public class GameStateController : Singleton<GameStateController>
         statectrl = StateMachine<GameStates>.Initialize(this);
         statectrl.ChangeState(GameStates.init);
     }
-
     
     public void init_Enter()
     {
-
+        statectrl.ChangeState(GameStates.title);
+    }
+    
+    public IEnumerator title_Enter()
+    {
+        yield return new WaitUntil(() => Input.anyKeyDown);
+        statectrl.ChangeState(GameStates.intro);
     }
 
-    public void intro_Enter()
+    public IEnumerator intro_Enter()
     {
-
-    }
-
-    public void title_Enter()
-    {
-
+        yield return new WaitForSeconds(1.0f);
+        statectrl.ChangeState(GameStates.playing);
     }
 
     public void playing_Enter()
     {
-
+        CanControl = true;
     }
-    
+
     public void playing_Exit()
     {
-
+        CanControl = false;
     }
+    
 
     public void finished_Enter()
     {
