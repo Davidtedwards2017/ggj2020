@@ -7,6 +7,7 @@ public class ArmExtenstion : MonoBehaviour
     public float MaxExtension = 10;
     public float MinExtention = 0;
     public float CurrentExtention;
+    public float CurrentStep = 0;
 
     public float step = 0;
     public float Speed = 1;

@@ -4,19 +4,15 @@ using UnityEngine;
 
 public class FollowMouse : MonoBehaviour
 {
-    public float Zposition = 45;
     public float speed = 10;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float MinWorldY = 10;
 
     // Update is called once per frame
     void Update()
     {
         var pos = Input.mousePosition;
-        pos.z = Zposition;
+        pos.z = -Camera.main.transform.position.z;
+        pos.y = Mathf.Max(pos.y, MinWorldY);
         pos = Camera.main.ScreenToWorldPoint(pos);
         transform.position = Vector3.Lerp(transform.position, pos, speed * Time.deltaTime);
     }
