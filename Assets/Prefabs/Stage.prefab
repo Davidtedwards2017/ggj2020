@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FilledPercentTarget: 0.9
+  StablizingTime: 3
   Pieces:
   - {fileID: 1290701784487835961}
   - {fileID: 1462447698391886811}
@@ -68,6 +69,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2773297487078985881}
     m_Modifications:
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 2773297486707870942}
+    - target: {fileID: 7820776537697005889, guid: d1f8fa51105482c4685c5c06df368d19,
+        type: 3}
+      propertyPath: breakSource
+      value: 
+      objectReference: {fileID: 6250980698915685264}
     - target: {fileID: 8272549674694800007, guid: d1f8fa51105482c4685c5c06df368d19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -170,6 +181,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2773297487078985881}
     m_Modifications:
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 2773297486707870942}
+    - target: {fileID: -7646696243721343942, guid: 193340d80c90b2e469d5f289d1e4b07c,
+        type: 3}
+      propertyPath: breakSource
+      value: 
+      objectReference: {fileID: 6250980698915685264}
     - target: {fileID: 6894159174987120173, guid: 193340d80c90b2e469d5f289d1e4b07c,
         type: 3}
       propertyPath: m_GravityScale
@@ -272,6 +293,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2773297487078985881}
     m_Modifications:
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 2773297486707870942}
+    - target: {fileID: 4005324260677132229, guid: 805cd0ea7bb2021498945d023422864d,
+        type: 3}
+      propertyPath: breakSource
+      value: 
+      objectReference: {fileID: 6250980698915685264}
     - target: {fileID: 8569172100133163213, guid: 805cd0ea7bb2021498945d023422864d,
         type: 3}
       propertyPath: m_Name
@@ -374,6 +405,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2773297487078985881}
     m_Modifications:
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 2773297486707870942}
+    - target: {fileID: -1082985687258860677, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
+        type: 3}
+      propertyPath: breakSource
+      value: 
+      objectReference: {fileID: 6250980698915685264}
     - target: {fileID: 4224194528663399692, guid: 3b69f25fa64ea1b4a8ad66b2b7a6044c,
         type: 3}
       propertyPath: m_GravityScale
@@ -551,6 +592,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: B_Small_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 2773297486707870942}
+    - target: {fileID: 3618381922721173901, guid: 924b44abc98ec694ab4451e514343d4f,
+        type: 3}
+      propertyPath: breakSource
+      value: 
+      objectReference: {fileID: 6250980698915685264}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 924b44abc98ec694ab4451e514343d4f, type: 3}
 --- !u!4 &2757933025573861151 stripped
@@ -658,6 +709,16 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 85.33486
       objectReference: {fileID: 0}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: sfxSource
+      value: 
+      objectReference: {fileID: 2773297486707870942}
+    - target: {fileID: 4664588219533223446, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+        type: 3}
+      propertyPath: breakSource
+      value: 
+      objectReference: {fileID: 6250980698915685264}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cfc6f2bd50fa2347a51a32a42709e34, type: 3}
 --- !u!4 &1117881359959097046 stripped
@@ -678,6 +739,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9a9e05f16da05a4798b330c08fc5784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &2773297486707870942 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 766306087, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+    type: 3}
+  m_PrefabInstance: {fileID: 2773297487016373241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6250980698915685264 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8125420123946838121, guid: 4cfc6f2bd50fa2347a51a32a42709e34,
+    type: 3}
+  m_PrefabInstance: {fileID: 2773297487016373241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9183535351151376685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -794,6 +867,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.000000018626451
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417281887797002400, guid: c2246ce4479788843b34f51195c0573f,
+        type: 3}
+      propertyPath: m_ShapeTexture
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2246ce4479788843b34f51195c0573f, type: 3}

@@ -173,9 +173,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1b38795fb53171f418045ff16bdcd6c1, type: 3}
   - {fileID: 8300000, guid: a46dfafadeca06d469c944bbb21e2b35, type: 3}
   - {fileID: 8300000, guid: dd5332c60879736489d6aaadcb01acc2, type: 3}
-  crashClips: []
-  sfxSource: {fileID: 0}
-  breakSource: {fileID: 0}
+  crashClips:
+  - {fileID: 8300000, guid: 1738e8f730d11004890b7ee80f000115, type: 3}
+  - {fileID: 8300000, guid: 70ece114a7097334d8f555d96f4512d4, type: 3}
+  - {fileID: 8300000, guid: 1556487956dcd0c46974b616070b08eb, type: 3}
+  - {fileID: 8300000, guid: b894e461a5784584ca146e8380c93fb0, type: 3}
+  - {fileID: 8300000, guid: 18a675b84a2d7fe439ef8c9c93d64fbf, type: 3}
+  - {fileID: 8300000, guid: 9e76f370bf0d3d84db873b097cedcd39, type: 3}
+  - {fileID: 8300000, guid: 84095fe6fe695f64eb2c6f5105377552, type: 3}
+  - {fileID: 8300000, guid: 9a417df602bfec54d9537310d7e33a20, type: 3}
+  - {fileID: 8300000, guid: 00a3d295b83b7684f849ff7f13daee9a, type: 3}
+  sfxSource: {fileID: 1452065625, guid: d1f8fa51105482c4685c5c06df368d19, type: 3}
+  breakSource: {fileID: -5200935233952435085, guid: d1f8fa51105482c4685c5c06df368d19,
+    type: 3}
 --- !u!82 &1218521109
 AudioSource:
   m_ObjectHideFlags: 0
