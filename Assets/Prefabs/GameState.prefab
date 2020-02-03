@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 8752292334879380426}
   - component: {fileID: 8752292334879380427}
   - component: {fileID: 9157626835161512722}
+  - component: {fileID: 312734937}
   m_Layer: 0
   m_Name: GameState
   m_TagString: Untagged
@@ -102,3 +103,18 @@ MonoBehaviour:
     type: 3}
   SpawnPoint: {fileID: 5194910756547853494}
   stageInstance: {fileID: 0}
+--- !u!114 &312734937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8752292334879380420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65188896ef2d77047b612f3417c23a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MusicVolumeLevelScale: 0.5
+  StartingSfxVolume: 1
+  StartingMusicVolume: 1

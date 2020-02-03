@@ -24,15 +24,16 @@ public class StageController : Singleton<StageController>
 
     public IEnumerator BreakingSequence()
     {
-        yield return new WaitForSeconds(1);
+        //yield return new WaitForSeconds(1);
+        //
+        //stageInstance.Scatter(Angle, Power - PowerOffset, Power + PowerOffset, -TorqueOffset, TorqueOffset);
+        //yield return new WaitForSeconds(1);
+        //
+        //stageInstance.Scatter(Angle, Power - PowerOffset, Power + PowerOffset, -TorqueOffset, TorqueOffset);
+        yield return new WaitForSeconds(0.75f);
 
         stageInstance.Scatter(Angle, Power - PowerOffset, Power + PowerOffset, -TorqueOffset, TorqueOffset);
         yield return new WaitForSeconds(1);
-
-        stageInstance.Scatter(Angle, Power - PowerOffset, Power + PowerOffset, -TorqueOffset, TorqueOffset);
-        yield return new WaitForSeconds(1);
-
-        stageInstance.Scatter(Angle, Power - PowerOffset, Power + PowerOffset, -TorqueOffset, TorqueOffset);
 
     }
 

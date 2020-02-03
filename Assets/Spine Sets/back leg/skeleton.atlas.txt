@@ -1,0 +1,27 @@
+
+skeleton.png
+size: 429,640
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+leg_front
+  rotate: true
+  xy: 2, 2
+  size: 222, 418
+  orig: 222, 418
+  offset: 0, 0
+  index: -1
+shin_front
+  rotate: false
+  xy: 2, 226
+  size: 242, 412
+  orig: 242, 412
+  offset: 0, 0
+  index: -1
+shoe_front
+  rotate: true
+  xy: 246, 272
+  size: 366, 181
+  orig: 366, 181
+  offset: 0, 0
+  index: -1

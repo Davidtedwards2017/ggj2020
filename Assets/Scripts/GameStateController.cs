@@ -43,22 +43,16 @@ public class GameStateController : Singleton<GameStateController>
     
     public IEnumerator title_Enter()
     {
+        StageController.SpawnStage();
+        yield return (StageController.BreakingSequence());
         StartSplashScreen.Active = true;
         yield return new WaitUntil(() => Input.anyKeyDown);
-        statectrl.ChangeState(GameStates.intro);
+        statectrl.ChangeState(GameStates.playing);
     }
 
     public void title_Exit()
     {
         StartSplashScreen.Active = false;
-    }
-
-    public IEnumerator intro_Enter()
-    {
-        StageController.SpawnStage();
-        yield return (StageController.BreakingSequence());
-        //yield return new WaitForSeconds(1.0f);
-        statectrl.ChangeState(GameStates.playing);
     }
 
     public void playing_Enter()
