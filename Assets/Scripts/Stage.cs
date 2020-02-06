@@ -63,11 +63,12 @@ public class Stage : MonoBehaviour
         }
     }
 
+    Coroutine _stabilizing;
     public void Filled_Enter()
     {
         Debug.Log("Filled");
         DetectorArea.SetFilledOutline(true);
-        StartCoroutine(Stablizing());
+        _stabilizing = StartCoroutine(Stablizing());
     }
 
     private IEnumerator Stablizing()
@@ -93,7 +94,10 @@ public class Stage : MonoBehaviour
 
     public void Filled_Exit()
     {
-        StopCoroutine("Stablizing");
+        if(_stabilizing != null)
+        {
+            StopCoroutine(_stabilizing);
+        }
     }
 
     public void Win_Enter()
